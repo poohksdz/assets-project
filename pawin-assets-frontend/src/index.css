@@ -1,0 +1,13 @@
+/* 1. เรียกใช้งานเครื่องมือของ Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* 🚀 2. บอก Tailwind v4 ว่า "ถ้าฉันกดปุ่มให้มีคลาส .dark โผล่มา ให้เปลี่ยนสีเป็นโหมดมืดซะ!" */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 3. ตั้งค่าฟอนต์พื้นฐาน */
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* (ไม่ต้องใส่ background-color ตรงนี้แล้ว เพราะในหน้า MainLayout เราเขียนคลาสจัดการไว้แล้วครับ) */
+}
